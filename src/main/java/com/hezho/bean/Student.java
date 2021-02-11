@@ -1,5 +1,8 @@
 package com.hezho.bean;
 
+import lombok.Data;
+
+@Data
 public class Student {
     private String studentName;  // 属性名要和数据库的列名相同（大小写先不用管）
     private int studentId;
@@ -17,21 +20,21 @@ public class Student {
         this.gradId = gradId;
     }
 
-    public String getStudentName() {
-        return studentName;
-    }
-
-    public void setStudentName(String studentName) {
-        this.studentName = studentName;
-    }
-
-    public int getStudentId() {
-        return studentId;
-    }
-
-    public void setStudentId(int studentId) {
-        this.studentId = studentId;
-    }
+//    public String getStudentName() {
+//        return studentName;
+//    }
+//
+//    public void setStudentName(String studentName) {
+//        this.studentName = studentName;
+//    }
+//
+//    public int getStudentId() {
+//        return studentId;
+//    }
+//
+//    public void setStudentId(int studentId) {
+//        this.studentId = studentId;
+//    }
 
     // 这里需要重写 toString，否则 System.out.pringln(student) 只会返回一个内存地址
     @Override
@@ -44,27 +47,27 @@ public class Student {
                 '}';
     }
 
-    public int getGradId() {
-        return gradId;
-    }
-
-    public void setGradId(int gradId) {
-        this.gradId = gradId;
-    }
-
-    public int getStuId() {
-        return stuId;
-    }
-
-    public void setStuId(int stuId) {
-        this.stuId = stuId;
-    }
-
-    public Grade getGrade() {
-        return grade;
-    }
-
-    public void setGrade(Grade grade) {
-        this.grade = grade;
-    }
+//    public int getGradId() {
+//        return gradId;
+//    }
+//
+//    public void setGradId(int gradId) {
+//        this.gradId = gradId;
+//    }
+//
+//    public int getStuId() {
+//        return stuId;
+//    }
+//
+//    public void setStuId(int stuId) {
+//        this.stuId = stuId;
+//    }
+//
+//    public Grade getGrade() {
+//        return grade;
+//    }
+//
+//    public void setGrade(Grade grade) {
+//        this.grade = grade;
+//    }
 }
